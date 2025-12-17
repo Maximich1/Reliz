@@ -1,3 +1,13 @@
 h1{
     font-family: sans-serif;
+    font-size: 40px;
+}
+
+.Images{
+    border: 3px solid black;
+}
+
+.text{
+    font-family: sans-serif;
+    font-size: 20px;
 }
