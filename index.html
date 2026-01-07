@@ -1,26 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PC_SHOP</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1> Місто Хирів:</h1>
-    <div></div>
-    <img class="Images" width="250px" src="./Images/img1.jpg" alt="">
-    <img class="Images" width="250px" src="./Images/img2.jpg" alt="">
-    <img class="Images" width="250px" src="./Images/img3.jpg" alt="">
-    <img class="Images" width="250px" src="./Images/img4.jpg" alt="">
-    <img class="Images" width="250px" src="./Images/img5.jpg" alt="">
+    <!-- (<nav>) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">PC_SHOP</div>
+
+            <ul class="nav-links">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO розділ -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Продаж пристроїв і комплектуючих</h1>
+                <p>
+                    Якісні комплектуючі і знижки
+                </p>
+                <div class="hero-buttons">
+                    <!-- <a href="#" class="btn btn-primary">Кнопка дії</a> -->
+                    <a href="#" class="btn btn-outline">Дізнатись</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Тут має бути навігація (<main>) -->
+    <section class="main">
+        <img src="./Images/Img1.png">
+        <img src="./Images/Img2.png">
+        <img src="./Images/Img3.png">
+        <div class="privileges">
+            <h2> Наші рекомендації </h2>
+            <p> <img src="https://cdn-icons-png.flaticon.com/512/1442/1442912.png"> AsRock b650M-HDV/M.2и </p>
+            <p> <img src="https://cdn-icons-png.flaticon.com/512/1442/1442912.png"> AMD Ryzen 7 9800X3D </p>
+            <p> <img src="https://cdn-icons-png.flaticon.com/512/1442/1442912.png"> RTX 5070 </p>
+        </div>
+    </section>
+    <!--  
+    <section class="ticket">
+        <h2> Талони </h2>
+        <div class="medium item">
+        <h3> Середній талон </h3>
+        <span class="price"> 350грн/год </span>
+        <p> ... </p>
+        </div>
+    </section>
+    -->
+
+    <div class="wrap">
+        <h1>Знижки на пристрої:</h1>
+
+        <div class="grid">
+            <!-- Basic -->
+            <article class="card">
+                <div class="title">
+                    <h3>ASUS ROG Strix G15 </h3>
+                    <img src="./Images/Laptop2.png" alt="">
+                </div>
+                <div class="price"><span class="actualprice">₴45000 </span> <br> ₴43000 </div>
+                <ul class="features">
+                    <li><span class="tick">✓</span> Операційна система: Windows 11</li>
+                    <li><span class="tick">✓</span> Накопичувач: SSD 512ГБ </li>
+                    <li><span class="tick">✓</span> Відеокарта: GeForce RTX 3050</li>
+                    <li><span class="tick">✓</span> Процесор: AMD Ryzen 7 4800H</li>
+                    <li><span class="tick">✓</span> Оперативна пам'ять: 16ГБ 3200MHz</li>
+                </ul>
+                <div class="cta">
+                    <button class="btn">Детальніше</button>
+                    <button class="btn btn-primary">Замовити</button>
+                </div>
+                <div class="foot">З мінімальним страховим депозитом</div>
+            </article>
+
+            <!-- Active (recommended) -->
+            <article class="card" style="
+            border: 1px solid rgba(255, 45, 45, 0.12);
+            transform: translateY(-4px);
+          ">
+                <div class="ribbon">Найпопулярніший</div>
+                <div class="title">
+                    <h3>ARTLINE Gaming X77</h3>
+                    <img src="./Images/PC2.png">
+                </div>
+                <div class="price"><span class="actualprice">₴87000 </span> <br> ₴85000 </div>
+                <ul class="features">
+                    <li><span class="tick">✓</span> Операційна система:
+                        Windows 11 </li>
+                    <li><span class="tick">✓</span> Об'єм накопичувача:
+                        1TB NVMe SSD
+                        2TB NVMe Gen4 Basic </li>
+                    <li><span class="tick">✓</span> Оперативна пам'ять: 32ГБ 6000MHz</li>
+                    <li><span class="tick">✓</span> Відеокарта:
+                        GeForce RTX 4070 12GB |
+                        GeForce RTX 4070 SUPER 12GB |
+                        GeForce RTX 4070 Ti SUPER 16GB </li>
+                </ul>
+                <div class="cta">
+                    <button class="btn">Детальніше</button>
+                    <button class="btn btn-primary">Замовити</button>
+                </div>
+                <div class="foot">Включає базову страховку та техпідтримку</div>
+            </article>
+
+            <!-- Profi -->
+            <article class="card">
+                <div class="title">
+                    <h3>Профі</h3>
+                </div>
+                <div class="price">₴2200</div>
+                <ul class="features">
+                    <li>
+                        <span class="tick">✓</span> Необмежена відстань
+                    </li>
+                    <li>
+                        <span class="tick">✓</span> Повна страховка
+                    </li>
+                    <li><span class="tick">✓</span> Персональний інструктор</li>
+                </ul>
+                <div class="cta">
+                    <button class="btn">Детальніше</button>
+                    <button class="btn btn-primary">Замовити</button>
+                </div>
+                <div class="foot">
+                    Пакети для корпоративу та заходів — індивідуально
+                </div>
+            </article>
+        </div>
+
+        <div class="accent-line"></div>
+
+        <footer style="
+          display: flex;
+          gap: 14px;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-top: 14px;
+        ">
+            <div style="color: var(--muted); font-size: 13px">
+                Безпечні платежі • Повна страховка • Професійне обслуговування
+            </div>
+            <div style="color: var(--muted); font-size: 13px">
+                Потрібна допомога?
+                <a href="#" style="color: var(--accent); text-decoration: none">Зв'язатися з нами</a>
+            </div>
+        </footer>
     </div>
-    <section class="text">
-        Хирів - невелике затишне місто в Самбірському районі Львівської області, розташоване неподалік від міста Самбір.
-        Це місто має давню історію, перші письмові згадки про нього датуються ще в XVI-XVII століттями. 
-        Хирів відомий своєю архітектурною та культурною спадщиною.  
+
+
+
+    <!-- Тут має бути навігація (<footer>) -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Про нас</h3>
+                <p>
+                    Даємо в прокат квадроциклі різної кубатури і розмірів, даємо все зняряддя для максимального комфорту
+                    і
+                    безпеки.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Навігаційні посилання</h3>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Квадроцикли</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Контакти</h3>
+                <p>Email: <a href="kvadromaxim300@gmail.com">kvadromaxim300@gmail.com</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><img
+                            src="https://static.vecteezy.com/system/resources/previews/042/127/158/non_2x/round-blue-facebook-logo-with-white-thick-border-and-long-shadow-on-a-transparent-background-free-png.png"
+                            alt="facebook" /></a>
+                    <a href="#" aria-label="Twitter"><img class="krugok"
+                            src="https://cdn-icons-png.flaticon.com/512/2496/2496110.png" alt="twitter" /></a>
+                    <a href="#" aria-label="Instagram"><img
+                            src="https://www.pngmart.com/files/21/Instagram-PNG-Isolated-Transparent-Image.png"
+                            alt="instagram" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Kvadro_Travel.</p>
+        </div>
+    </footer>
+
 </body>
+
 
 </html>
