@@ -90,3 +90,110 @@
 * {
   margin: 0;
 }
+
+.contact-main {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  padding: 80px;
+  height: 65vh;
+  z-index: 1;
+}
+
+/* ФОН через псевдоелемент */
+.contact-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./Images/Img4.avif") center / cover no-repeat;
+  z-index: -1;
+
+}
+
+/* Загальний контейнер */
+/* СКЛЯНІ КОНТЕЙНЕРИ */
+.container {
+  flex: 1;
+  padding: 35px;
+  border-radius: 40px;
+  height: 355px;
+
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+
+  color: #fff;
+}
+
+.container p{
+  font-size: 22px;
+}
+
+
+/* Форма */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.form-container h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.form-container input,
+.form-container textarea {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* фокус */
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: #7dd3fc;
+  box-shadow: 0 0 0 2px rgba(125, 211, 252, 0.35);
+}
+
+/* кнопка */
+.form-container button {
+  background: linear-gradient(
+    135deg,
+    #7dd3fc,
+    #38bdf8
+  );
+  color: #0f172a;
+  font-weight: 600;
+  border: none;
+}
+
+/* hover */
+.form-container button:hover {
+  background: linear-gradient(
+    135deg,
+    #93c5fd,
+    #60a5fa
+  );
+}
+
